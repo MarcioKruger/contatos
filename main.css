@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    justify-content: center;
+}
+
+header{
+    background-color: cadetblue;
+    color: #fff;
+    margin-bottom: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 15px solid rgba(34, 66, 26, 0.219);;
+}
+
+header button{
+    margin-left: 20px;
+    background-color: rgba(26, 121, 3, 0.719);
+    border: none;
+    padding: 4px;
+    color:#fff;
+    cursor: pointer;
+}
+
+form{
+    background-color: rgba(41, 95, 212, 0.486);
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+form h2{
+    color: #1d0b5c;
+    margin-bottom: 20px;
+}
+
+form input{
+    background-color: rgb(196, 221, 152);
+    height: 30px;
+    padding: 5px;
+    width: 300px;
+    border: none;
+    color: #000000;
+}
+
+form button{
+    height: 30px;
+    border: none;
+    padding: 1px;
+    font-weight: bolder;
+    width: 80px;
+    cursor: pointer;
+    background-color: rgba(26, 121, 3, 0.719);
+    color: #fff;
+}
+
+#btn-cancelar{
+    background-color: red;
+    width: 60px;
+}
+
+.todo-list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    overflow: hidden;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(18, 77, 11, 0.212)
+}
+
+.left-cont input{
+    display: none;
+    cursor: pointer;
+}
+
+.left-cont label{
+    position: relative;
+    cursor: pointer;
+}
+
+.left-cont label:before{
+    content: '';
+    padding: 11px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: #412d46;
+    border-radius: 3px;
+}
+
+.left-cont input:checked + label:before{
+    background: #ffc800;
+}
+
+.left-cont input:checked + label:after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 4px;
+    left: 8px;
+    width: 5px;
+    height: 12px;
+    border: solid #221525;
+    border-width: 0px 2px 2px 0px;
+    transform: rotate(45deg);
+}
+
+.remove {
+    color: #ff0047;
+    cursor: pointer;
+    line-height: 1;
+    transform: translateX(48px);
+    transition: 1s;
+}
+
+.remove.active {
+    transform: translateX(0px);
+    transition: 1s;
+}

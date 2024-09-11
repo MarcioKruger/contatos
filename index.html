@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>To-List  -- jQuery</title>
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+        <button type="button">Nova tarefa +</button>
+    </header>
+    <form>
+        <h2>Inserir nova tarefa</h2>
+        <input type="text" class="form-control" required placeholder="Nova tarefa">
+        <button type="submit" class="add">Adcionar +</button>
+        <button type="reset" id="btn-cancelar">Cancelar</button>
+    </form>
+
+    <ul class="todo-list"></ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
